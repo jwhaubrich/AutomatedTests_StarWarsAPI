@@ -1,4 +1,4 @@
-Feature: The HTTP Method GET works correctly against the StarWarsAPI
+Feature: The HTTP method GET works correctly against the StarWarsAPI
   Background: Andres is at the base URL for the StarWarsAPI
     * url 'https://swapi.dev/api'
     * header Accept = 'application/json'
@@ -64,12 +64,6 @@ Feature: The HTTP Method GET works correctly against the StarWarsAPI
 
     And def apiResponse = response
     Then match apiResponse.results[*].climate contains ["arid"]
-
-# Scenario below works but the XML isn't written correctly with matching end meta tag
-#  Scenario: Andres navigates to a false path and receives 404 error
-#    Given path '/false'
-#    When method GET
-#    Then status 404
 
   Scenario Outline: Andres ensures all data endpoints are returned for people
     Given path '/people'
