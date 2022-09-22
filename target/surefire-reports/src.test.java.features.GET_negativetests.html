@@ -168,26 +168,26 @@
 </img><div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [1:6]</span><span class="scenario-name">Andres is unable to find the list of all cars used within the StarWarsAPI</span>
+<span class="scenario-keyword">Scenario: [1:6]</span><span class="scenario-name">Andres is unable to find the cars endpoint within the StarWarsAPI</span>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* url 'https://swapi.dev/api'</div>
-<div class="time-cell passed">0.001737</div>
+<div class="time-cell passed">0.001527</div>
 </div>
-<div class="preformatted">18:11:08.067 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="preformatted">14:11:23.704 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
 <div class="step-row">
 <div class="step-cell passed">* header Accept = 'application/json'</div>
-<div class="time-cell passed">0.001965</div>
+<div class="time-cell passed">0.001113</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given path '/cars'</div>
-<div class="time-cell passed">0.001256</div>
+<div class="time-cell passed">0.000996</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method GET</div>
-<div class="time-cell passed">1.450173</div>
+<div class="time-cell passed">1.211575</div>
 </div>
-<div class="preformatted">18:11:08.511 request:
+<div class="preformatted">14:11:24.094 request:
 1 &gt; GET https://swapi.dev/api/cars
 1 &gt; Accept: application/json
 1 &gt; Accept-Encoding: gzip,deflate
@@ -195,11 +195,11 @@
 1 &gt; Host: swapi.dev
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
 
-18:11:09.478 response time in milliseconds: 965.14
+14:11:24.874 response time in milliseconds: 780.95
 1 &lt; 404
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: text/html
-1 &lt; Date: Wed, 21 Sep 2022 23:11:09 GMT
+1 &lt; Date: Thu, 22 Sep 2022 19:11:24 GMT
 1 &lt; ETag: "2d88dd3a37aadaa01f6f40e5e32e5ab8"
 1 &lt; Server: nginx/1.16.1
 1 &lt; Transfer-Encoding: chunked
@@ -611,38 +611,38 @@
 &lt;/html&gt;
 
 
-18:11:09.524 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 24; columnNumber: 3; The element type "meta" must be terminated by the matching end-tag "&lt;/meta&gt;".</div>
+14:11:24.919 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 24; columnNumber: 3; The element type "meta" must be terminated by the matching end-tag "&lt;/meta&gt;".</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 404</div>
-<div class="time-cell passed">0.000016</div>
+<div class="time-cell passed">0.000014</div>
 </div>
 </div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [2:11]</span><span class="scenario-name">Andres searches for Joe Haubrich and is unable to find him</span>
+<span class="scenario-keyword">Scenario: [2:11]</span><span class="scenario-name">Andres searches for Joe Haubrich with the StarWarsAPI, returns 200, but the results list is empty containing no results</span>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* url 'https://swapi.dev/api'</div>
-<div class="time-cell passed">0.00007</div>
+<div class="time-cell passed">0.000067</div>
 </div>
-<div class="preformatted">18:11:09.531 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="preformatted">14:11:24.930 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
 <div class="step-row">
 <div class="step-cell passed">* header Accept = 'application/json'</div>
-<div class="time-cell passed">0.00005</div>
+<div class="time-cell passed">0.000049</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given path '/people'</div>
-<div class="time-cell passed">0.001211</div>
+<div class="time-cell passed">0.001164</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And param search = 'Joe Haubrich'</div>
-<div class="time-cell passed">0.000999</div>
+<div class="time-cell passed">0.001123</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method GET</div>
-<div class="time-cell passed">0.70775</div>
+<div class="time-cell passed">0.685309</div>
 </div>
-<div class="preformatted">18:11:09.535 request:
+<div class="preformatted">14:11:24.930 request:
 1 &gt; GET https://swapi.dev/api/people?search=Joe+Haubrich
 1 &gt; Accept: application/json
 1 &gt; Accept-Encoding: gzip,deflate
@@ -650,12 +650,12 @@
 1 &gt; Host: swapi.dev
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
 
-18:11:10.208 response time in milliseconds: 672.85
+14:11:25.594 response time in milliseconds: 662.13
 1 &lt; 200
 1 &lt; Allow: GET, HEAD, OPTIONS
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Wed, 21 Sep 2022 23:11:10 GMT
+1 &lt; Date: Thu, 22 Sep 2022 19:11:24 GMT
 1 &lt; ETag: "4200165871240e4de02c79cbd62d9180"
 1 &lt; Server: nginx/1.16.1
 1 &lt; Strict-Transport-Security: max-age=15768000
@@ -665,15 +665,15 @@
 {"count":0,"next":null,"previous":null,"results":[]}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.00001</div>
+<div class="time-cell passed">0.000005</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And def apiResponse = response</div>
-<div class="time-cell passed">0.00122</div>
+<div class="time-cell passed">0.000742</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Then match apiResponse.results[*] contains []</div>
-<div class="time-cell passed">0.01072</div>
+<div class="time-cell passed">0.007433</div>
 </div>
 </div>
 </div>

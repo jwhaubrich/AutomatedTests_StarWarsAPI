@@ -1,5 +1,5 @@
-18:11:08.067 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-18:11:08.511 request:
+14:11:23.704 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+14:11:24.094 request:
 1 > GET https://swapi.dev/api/cars
 1 > Accept: application/json
 1 > Accept-Encoding: gzip,deflate
@@ -7,11 +7,11 @@
 1 > Host: swapi.dev
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
 
-18:11:09.478 response time in milliseconds: 965.14
+14:11:24.874 response time in milliseconds: 780.95
 1 < 404
 1 < Connection: keep-alive
 1 < Content-Type: text/html
-1 < Date: Wed, 21 Sep 2022 23:11:09 GMT
+1 < Date: Thu, 22 Sep 2022 19:11:24 GMT
 1 < ETag: "2d88dd3a37aadaa01f6f40e5e32e5ab8"
 1 < Server: nginx/1.16.1
 1 < Transfer-Encoding: chunked
@@ -423,5 +423,5 @@
 </html>
 
 
-18:11:09.524 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 24; columnNumber: 3; The element type "meta" must be terminated by the matching end-tag "</meta>".
+14:11:24.919 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 24; columnNumber: 3; The element type "meta" must be terminated by the matching end-tag "</meta>".
 

@@ -1,5 +1,5 @@
-18:11:09.531 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-18:11:09.535 request:
+14:11:24.930 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+14:11:24.930 request:
 1 > GET https://swapi.dev/api/people?search=Joe+Haubrich
 1 > Accept: application/json
 1 > Accept-Encoding: gzip,deflate
@@ -7,12 +7,12 @@
 1 > Host: swapi.dev
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
 
-18:11:10.208 response time in milliseconds: 672.85
+14:11:25.594 response time in milliseconds: 662.13
 1 < 200
 1 < Allow: GET, HEAD, OPTIONS
 1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Wed, 21 Sep 2022 23:11:10 GMT
+1 < Date: Thu, 22 Sep 2022 19:11:24 GMT
 1 < ETag: "4200165871240e4de02c79cbd62d9180"
 1 < Server: nginx/1.16.1
 1 < Strict-Transport-Security: max-age=15768000
