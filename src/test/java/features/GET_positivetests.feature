@@ -17,19 +17,6 @@ Feature: The HTTP method GET works correctly against the StarWarsAPI
     And match header Content-Type contains 'application/json'
     And match response.count == 60
 
-# The scenario below uses ?name=Luke+Skywalker, not on the StarWarsAPI function for search
-# Always check the API documentation to ensure you are testing the functions it specifies
-  # The StarwarsAPI has a function build into it's API to search for people (see line 57)
-  Scenario: Andres searches for Luke Skywalker and is returned with information about him
-    Given path '/people'
-    And param name = 'Luke Skywalker'
-    When method GET
-    Then status 200
-
-    And def userResponse = response
-    Then match userResponse.results[*].name contains ["Luke Skywalker"]
-    Then match userResponse.results[*].height contains ["172"]
-
   Scenario: Andres searches for the first person and is returned with information about Luke Skywalker
     Given path '/people/1'
     When method GET
@@ -37,6 +24,18 @@ Feature: The HTTP method GET works correctly against the StarWarsAPI
     And match header Content-Type contains 'application/json'
     And match response.name == 'Luke Skywalker'
     And match response.height == '172'
+    And match response.hair_color == 'blond'
+
+  Scenario: Andres searches for the planet Tatooine
+    Given path '/planets'
+    And param search = 'Tatooine'
+    When method GET
+    Then status 200
+    And match header Content-Type contains 'application/json'
+
+    And def apiResponse = response
+    Then match apiResponse.results[*].climate contains ["arid"]
+    Then match apiResponse.results[*].orbital_period contains ["304"]
 
   Scenario Outline: Andres checks all endpoints and ensures that they work correctly
     Given path '/<endpoints>'
@@ -54,16 +53,6 @@ Feature: The HTTP method GET works correctly against the StarWarsAPI
       |vehicles |
       |people   |
 
-# This scenario uses the built search function within the StarwarsAPI
-  Scenario: Andres searches for the planet Tatooine
-    Given path '/planets'
-    And param search = 'Tatooine'
-    When method GET
-    Then status 200
-    And match header Content-Type contains 'application/json'
-
-    And def apiResponse = response
-    Then match apiResponse.results[*].climate contains ["arid"]
 
   Scenario Outline: Andres ensures all data endpoints are returned for people
     Given path '/people'

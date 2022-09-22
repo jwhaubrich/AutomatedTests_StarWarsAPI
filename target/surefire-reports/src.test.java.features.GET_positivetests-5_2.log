@@ -1,5 +1,5 @@
-17:54:39.274 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-17:54:39.274 request:
+13:49:52.993 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+13:49:52.993 request:
 1 > GET https://swapi.dev/api/people
 1 > Accept: application/json
 1 > Accept-Encoding: gzip,deflate
@@ -7,12 +7,12 @@
 1 > Host: swapi.dev
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
 
-17:54:40.237 response time in milliseconds: 955.69
+13:49:53.978 response time in milliseconds: 981.57
 1 < 200
 1 < Allow: GET, HEAD, OPTIONS
 1 < Connection: keep-alive
 1 < Content-Type: application/json
-1 < Date: Wed, 21 Sep 2022 22:54:40 GMT
+1 < Date: Thu, 22 Sep 2022 18:49:53 GMT
 1 < ETag: "b493126da505af6fec015ec116fec193"
 1 < Server: nginx/1.16.1
 1 < Strict-Transport-Security: max-age=15768000
