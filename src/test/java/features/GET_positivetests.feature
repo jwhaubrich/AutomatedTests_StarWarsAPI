@@ -81,5 +81,17 @@ Feature: The HTTP method GET works correctly against the StarWarsAPI
       |edited    |
       |url       |
 
+    #Andres searches
+#  Scenario: Andres searches for starships using specific starship IDs
+#    Given path '/people'
+#    When method GET
+#    Then status 200
+#    * match header Content-Type contains 'application/json'
+#
+#    * def apiResponse = response
+#    * match apiResponse.results[0] contains {<endpoints>: '#ignore'}
+
+
+
 
 
