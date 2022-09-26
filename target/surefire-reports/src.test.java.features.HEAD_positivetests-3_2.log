@@ -1,0 +1,22 @@
+18:39:05.130 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+18:39:05.130 request:
+1 > HEAD https://swapi.dev/api/people
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: swapi.dev
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+
+18:39:05.866 response time in milliseconds: 742.95
+1 < 200
+1 < Allow: GET, HEAD, OPTIONS
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 26 Sep 2022 23:39:06 GMT
+1 < ETag: "b493126da505af6fec015ec116fec193"
+1 < Server: nginx/1.16.1
+1 < Strict-Transport-Security: max-age=15768000
+1 < Vary: Accept, Cookie
+1 < X-Frame-Options: SAMEORIGIN
+
+18:37:44.869 assertion failed: path: $.count, actual: '', expected: '82', reason: not equal

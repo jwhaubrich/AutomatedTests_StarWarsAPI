@@ -16,9 +16,3 @@ Feature: The HTTP method GET doesn't function correctly against the StarWarsAPI
 
     And def apiResponse = response
     Then match apiResponse.results[*] contains []
-
-#    Given path '/planets'
-#    And param search = 'Tatooine'
-#    When method GET
-#    Then status 200
-#    And match header Content-Type contains 'application/json'

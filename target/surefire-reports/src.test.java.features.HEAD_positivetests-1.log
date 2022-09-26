@@ -1,0 +1,24 @@
+18:39:01.194 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+18:39:01.643 request:
+1 > HEAD https://swapi.dev/api/people/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: swapi.dev
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+
+18:39:03.469 response time in milliseconds: 1832.49
+1 < 200
+1 < Allow: GET, HEAD, OPTIONS
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 26 Sep 2022 23:39:03 GMT
+1 < ETag: "ee398610435c328f4d0a4e1b0d2f7bbc"
+1 < Server: nginx/1.16.1
+1 < Strict-Transport-Security: max-age=15768000
+1 < Vary: Accept, Cookie
+1 < X-Frame-Options: SAMEORIGIN
+
+18:33:53.093 assertion failed: path: $.name, actual: '', expected: 'Luke Skywalker', reason: not equal
+kin_color":"fair","eye_color":"blue","birth_year":"19BBY","gender":"male","homeworld":"https://swapi.dev/api/planets/1/","films":["https://swapi.dev/api/films/1/","https://swapi.dev/api/films/2/","https://swapi.dev/api/films/3/","https://swapi.dev/api/films/6/"],"species":[],"vehicles":["https://swapi.dev/api/vehicles/14/","https://swapi.dev/api/vehicles/30/"],"starships":["https://swapi.dev/api/starships/12/","https://swapi.dev/api/starships/22/"],"created":"2014-12-09T13:50:51.644000Z","edited":"2014-12-20T21:17:56.891000Z","url":"https://swapi.dev/api/people/1/"}
+

@@ -1,0 +1,19 @@
+18:48:11.999 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+18:48:12.485 request:
+1 > HEAD https://swapi.dev/api/motorcycles
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: swapi.dev
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+
+18:48:13.382 response time in milliseconds: 895.63
+1 < 404
+1 < Connection: keep-alive
+1 < Content-Type: text/html
+1 < Date: Mon, 26 Sep 2022 23:48:13 GMT
+1 < ETag: "5b6440eecac00734d5f73bb4090f1efa"
+1 < Server: nginx/1.16.1
+1 < X-Frame-Options: SAMEORIGIN
+
+18:48:03.375 assertion failed: path: $['Content-Type'][0], actual: 'text/html', expected: 'application/json', reason: not a sub-string
