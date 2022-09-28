@@ -4,7 +4,7 @@ Feature: The HTTP method HEAD works correctly against the StarWarsAPI
     * url 'https://swapi.dev/api'
     * header Accept = 'application/json'
 
-  Scenario: Andres searches for the first person and is returned with information about Luke Skywalker
+  Scenario: Andres searches for the first person and is returned with information about Luke Skywalker - scenario pass.
     Given path '/people/1'
     When method HEAD
     Then status 200
@@ -17,7 +17,7 @@ Feature: The HTTP method HEAD works correctly against the StarWarsAPI
     Then status 200
     And match header Content-Type contains 'application/json'
 
-  Scenario Outline: Andres checks all endpoints and ensures that they work correctly, with upper and lowercase.
+  Scenario Outline: Andres checks all endpoints with lowercase letters and ensures that they work correctly - scenario pass.
     Given path '/<endpoints>'
     When method HEAD
     Then status 200
@@ -31,9 +31,4 @@ Feature: The HTTP method HEAD works correctly against the StarWarsAPI
       | species   |
       | starships |
       | vehicles  |
-      | FILMS     |
-      | PEOPLE    |
-      | PLANETS   |
-      | SPECIES   |
-      | STARSHIPS |
-      | VEHICLES  |
+

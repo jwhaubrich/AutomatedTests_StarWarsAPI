@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: features/GET_negativetests.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+      <td>28 Sep 2022, 13:31</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">features/GET_negativetests.feature</td>
+          <td      class="passed"    >13</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">13</td>
+
+          <td  class="passed"    >2</td>
+          <td >0</td>
+          <td class="total">2</td>
+
+          <td class="duration" data-value="4484842200">4.484</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">features/GET_negativetests.feature</span>
+
+
+</div>
+
+        <div class="description indention">The HTTP method GET doesn't function correctly against the StarWarsAPI</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.005</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://swapi.dev/api'</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>13:30:51.989 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Accept = 'application/json'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">2.469</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Andres is unable to find the cars endpoint within the StarWarsAPI - scenario fail.</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/cars'</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">2.464</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>13:30:52.302 request:
+1 &gt; GET https://swapi.dev/api/cars
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: swapi.dev
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+
+13:30:54.454 response time in milliseconds: 2148.20
+1 &lt; 404
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: text/html
+1 &lt; Date: Wed, 28 Sep 2022 18:30:55 GMT
+1 &lt; ETag: &quot;2d88dd3a37aadaa01f6f40e5e32e5ab8&quot;
+1 &lt; Server: nginx/1.16.1
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Frame-Options: SAMEORIGIN
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+  &lt;title&gt;Page not found at /api/cars/&lt;/title&gt;
+  &lt;meta name=&quot;robots&quot; content=&quot;NONE,NOARCHIVE&quot;&gt;
+  &lt;style type=&quot;text/css&quot;&gt;
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; }
+    body&gt;div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id=&quot;summary&quot;&gt;
+    &lt;h1&gt;Page not found &lt;span&gt;(404)&lt;/span&gt;&lt;/h1&gt;
+    &lt;table class=&quot;meta&quot;&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Request Method:&lt;/th&gt;
+        &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Request URL:&lt;/th&gt;
+      &lt;td&gt;https://swapi.dev/api/cars/&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+  &lt;div id=&quot;info&quot;&gt;
+    
+      &lt;p&gt;
+      Using the URLconf defined in &lt;code&gt;swapi.urls&lt;/code&gt;,
+      Django tried these URL patterns, in this order:
+      &lt;/p&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;
+            
+                ^admin/
+                
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^$
+                
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^documentation$
+                
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^about$
+                
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^stats$
+                
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^stripe/donation
+                
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/people/schema$
+                
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/planets/schema$
+                
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/films/schema$
+                
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/species/schema$
+                
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/vehicles/schema$
+                
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/starships/schema$
+                
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^$
+                [name='api-root']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^\.(?P&amp;lt;format&amp;gt;[a-z0-9]+)$
+                [name='api-root']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^people/$
+                [name='people-list']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^people/\.(?P&amp;lt;format&amp;gt;[a-z0-9]+)$
+                [name='people-list']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^people/(?P&amp;lt;pk&amp;gt;[^/.]+)/$
+                [name='people-detail']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^people/(?P&amp;lt;pk&amp;gt;[^/.]+)/\.(?P&amp;lt;format&amp;gt;[a-z0-9]+)$
+                [name='people-detail']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^planets/$
+                [name='planet-list']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^planets/\.(?P&amp;lt;format&amp;gt;[a-z0-9]+)$
+                [name='planet-list']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^planets/(?P&amp;lt;pk&amp;gt;[^/.]+)/$
+                [name='planet-detail']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^planets/(?P&amp;lt;pk&amp;gt;[^/.]+)/\.(?P&amp;lt;format&amp;gt;[a-z0-9]+)$
+                [name='planet-detail']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^films/$
+                [name='film-list']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^films/\.(?P&amp;lt;format&amp;gt;[a-z0-9]+)$
+                [name='film-list']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^films/(?P&amp;lt;pk&amp;gt;[^/.]+)/$
+                [name='film-detail']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^films/(?P&amp;lt;pk&amp;gt;[^/.]+)/\.(?P&amp;lt;format&amp;gt;[a-z0-9]+)$
+                [name='film-detail']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^species/$
+                [name='species-list']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^species/\.(?P&amp;lt;format&amp;gt;[a-z0-9]+)$
+                [name='species-list']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^species/(?P&amp;lt;pk&amp;gt;[^/.]+)/$
+                [name='species-detail']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^species/(?P&amp;lt;pk&amp;gt;[^/.]+)/\.(?P&amp;lt;format&amp;gt;[a-z0-9]+)$
+                [name='species-detail']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^vehicles/$
+                [name='vehicle-list']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^vehicles/\.(?P&amp;lt;format&amp;gt;[a-z0-9]+)$
+                [name='vehicle-list']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^vehicles/(?P&amp;lt;pk&amp;gt;[^/.]+)/$
+                [name='vehicle-detail']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^vehicles/(?P&amp;lt;pk&amp;gt;[^/.]+)/\.(?P&amp;lt;format&amp;gt;[a-z0-9]+)$
+                [name='vehicle-detail']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^starships/$
+                [name='starship-list']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^starships/\.(?P&amp;lt;format&amp;gt;[a-z0-9]+)$
+                [name='starship-list']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^starships/(?P&amp;lt;pk&amp;gt;[^/.]+)/$
+                [name='starship-detail']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                ^api/
+                
+            
+                ^starships/(?P&amp;lt;pk&amp;gt;[^/.]+)/\.(?P&amp;lt;format&amp;gt;[a-z0-9]+)$
+                [name='starship-detail']
+            
+          &lt;/li&gt;
+        
+      &lt;/ol&gt;
+      &lt;p&gt;The current URL, &lt;code&gt;api/cars/&lt;/code&gt;, didn't match any of these.&lt;/p&gt;
+    
+  &lt;/div&gt;
+
+  &lt;div id=&quot;explanation&quot;&gt;
+    &lt;p&gt;
+      You're seeing this error because you have &lt;code&gt;DEBUG = True&lt;/code&gt; in
+      your Django settings file. Change that to &lt;code&gt;False&lt;/code&gt;, and Django
+      will display a standard 404 page.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+13:30:54.472 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 24; columnNumber: 3; The element type &quot;meta&quot; must be terminated by the matching end-tag &quot;&lt;/meta&gt;&quot;.</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 404</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://swapi.dev/api'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>13:30:54.436 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Accept = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">2.009</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Andres searches for Joe Haubrich with the StarWarsAPI, returns 200, but the results list is empty containing no results - scenario fail.</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/people'</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param search = 'Joe Haubrich'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">2.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>13:30:54.456 request:
+1 &gt; GET https://swapi.dev/api/people?search=Joe+Haubrich
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: swapi.dev
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+
+13:30:56.456 response time in milliseconds: 2001.61
+1 &lt; 200
+1 &lt; Allow: GET, HEAD, OPTIONS
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 28 Sep 2022 18:30:57 GMT
+1 &lt; ETag: &quot;4200165871240e4de02c79cbd62d9180&quot;
+1 &lt; Server: nginx/1.16.1
+1 &lt; Strict-Transport-Security: max-age=15768000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept, Cookie
+1 &lt; X-Frame-Options: SAMEORIGIN
+{&quot;count&quot;:0,&quot;next&quot;:null,&quot;previous&quot;:null,&quot;results&quot;:[]}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def apiResponse = response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match apiResponse.results[*] contains []</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

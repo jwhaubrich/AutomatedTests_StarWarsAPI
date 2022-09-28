@@ -4,7 +4,7 @@ Feature: The HTTP method GET works correctly against the StarWarsAPI
     * url 'https://swapi.dev/api'
     * header Accept = 'application/json'
 
-  Scenario: Andres searches for the first person and is returned with information about Luke Skywalker
+  Scenario: Andres searches for the first person and is returned with information about Luke Skywalker - scenario pass.
     Given path '/people/1'
     When method GET
     Then status 200
@@ -13,7 +13,7 @@ Feature: The HTTP method GET works correctly against the StarWarsAPI
     And match response.height == '172'
     And match response.hair_color == 'blond'
 
-  Scenario: Andres searches for the planet Tatooine
+  Scenario: Andres searches for the planet Tatooine - scenario pass.
     Given path '/planets'
     And param search = 'Tatooine'
     When method GET
@@ -24,7 +24,7 @@ Feature: The HTTP method GET works correctly against the StarWarsAPI
     Then match apiResponse.results[*].climate contains ["arid"]
     Then match apiResponse.results[*].orbital_period contains ["304"]
 
-  Scenario Outline: Andres checks all endpoints and ensures that they work correctly
+  Scenario Outline: Andres checks all endpoints and ensures that they work correctly - scenario pass.
     Given path '/<endpoints>'
     When method GET
     Then status 200
@@ -41,7 +41,7 @@ Feature: The HTTP method GET works correctly against the StarWarsAPI
       | vehicles  | 39            |
 
 
-  Scenario Outline: Andres ensures all data endpoints are returned for people
+  Scenario Outline: Andres ensures all data endpoints are returned for people - scenario pass.
     Given path '/people'
     When method GET
     Then status 200

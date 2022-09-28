@@ -13,27 +13,25 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import static org.junit.Assert.assertTrue;
+
 public class IntegrationTest {
 
     @Test
     public void testParallel(){
-        Results result = Runner.parallel(getClass(),4); //Karate = Results,Runner
-        generateReport(result.getReportDir());
-        //the generateReport step above won't work, because I don't have any json files
-        //I confirmed this by commenting out above method and below method and program still
-        //generates the cucumber and surefile report (Karate)
-        Assert.assertTrue(result.getErrorMessages(),result.getFailCount() == 0);
-        //Above means that there should be no errors inside of the test
-        //Above does two checks. First that the failed count is 0, then that getErrorMessages
-        //is also equal to 0. So no failed count and no error messages
+        System.setProperty("karate.env", "demo");
+        Results results = Runner.parallel(getClass(),5);
+
+        generateReport(results.getReportDir());
+        assertTrue(results.getErrorMessages(), results.getFailCount() == 0);
     }
 
-    public static void generateReport(String salida){
-        Collection<File> jsonFiles = FileUtils.listFiles(new File(salida),new String[]{"json"},true);
-        List<String> jsonPath = new ArrayList<>(jsonFiles.size());
-        jsonFiles.forEach(file -> jsonPath.add(file.getAbsolutePath()));
-        Configuration config = new Configuration(new File("target"),"pruebas integracion");
-        ReportBuilder reportBuilder = new ReportBuilder(jsonPath,config);
+    public static void generateReport(String karateOutputPath){
+        Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[] {"json"}, true);
+        final List<String> jsonPaths = new ArrayList(jsonFiles.size());
+        jsonFiles.forEach(file -> jsonPaths.add(file.getAbsolutePath()));
+        Configuration config = new Configuration(new File("target"), "demo");
+        ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
         reportBuilder.generateReports();
     }
 }
