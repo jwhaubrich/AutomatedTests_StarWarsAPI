@@ -1,0 +1,26 @@
+12:57:28.030 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+12:57:28.440 request:
+1 > OPTIONS https://swapi.dev/api/films
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: swapi.dev
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+
+12:57:30.255 response time in milliseconds: 1813.63
+1 < 200
+1 < Allow: GET, HEAD, OPTIONS
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 28 Sep 2022 17:57:30 GMT
+1 < ETag: "936433121f680d0cfa8aaba720523b5b"
+1 < Server: nginx/1.16.1
+1 < Strict-Transport-Security: max-age=15768000
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept, Cookie
+1 < X-Frame-Options: SAMEORIGIN
+{"name":"Film List","description":"","renders":["application/json","text/html","application/json"],"parses":["application/json","application/x-www-form-urlencoded","multipart/form-data"]}
+
+2:41:35.559 assertion failed: path: $.name, actual: 'Film List', expected: ["Film List"], reason: actual value is not list-like
+
+: actual json-path does not exist
