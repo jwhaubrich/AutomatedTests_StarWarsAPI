@@ -67,11 +67,11 @@ A simple automated application test suite that performs several HTTP requests ag
 
 ### Built With
 
-* [Java 8: Version 1.8.0_301 ](https://java.com/en/)
-* [Gradle: Version 7.4.2](https://gradle.org/)
+* [Java 8: Version 1.8.0_341 ](https://java.com/en/)
+* [Gradle: Version 7.4](https://gradle.org/)
 * [Groovy: Version 3.0.9](https://groovy-lang.org/)
-* [Ant: Version 1.10.11](https://ant.apache.org/)
-* [JVM: Version 1.8.0_301](https://www.java.com/en/)
+* [Ant: Version 1.9](https://ant.apache.org/)
+* [JVM: Version 1.8.0_341](https://www.java.com/en/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -90,7 +90,7 @@ First, we'll need to copy this repo to your machine, then running the applicatio
    git clone https://github.com/jwhaubrich/AutomatedTests_StarWarsAPI.git
    ```
 2. Navigate to the local directory where the repo is located on your machine.
-3. Run the Simple Calculator program with:
+3. Run the StarWarsIntegrationTests program with:
    ```sh
    ./gradlew run
    ```
